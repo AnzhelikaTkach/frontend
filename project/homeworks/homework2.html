@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Museu Nacional d’Art de Catalunya</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+      body {
+        background-color: rgb(245, 241, 234);
+      }
+
+      h1 {
+        text-transform: capitalize;
+        font-weight: 400;
+      }
+      a {
+        color: black;
+      }
+
+      .menu {
+        background: rgb(250, 219, 166);
+        padding: 10px;
+      }
+      .about-museum-container {
+        width: 49%;
+        height: 100%;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: justify;
+        line-height: 1.5;
+        text-indent: 8px;
+      }
+
+      .image-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-size: cover;
+        background-position: center;
+        background-image: url("museum.webp");
+        width: 50%;
+        height: 100%;
+      }
+
+      .column {
+        text-align: justify;
+        column-count: 3;
+      }
+
+      .column-item {
+        break-before: always;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="https://www.museunacional.cat/en/visit">Visit</a>
+      <a href="https://www.museunacional.cat/en/collection-0">Collection</a>
+      <a href="https://www.museunacional.cat/en/exhibitions">Exhibitions</a>
+      <a
+        href="https://www.museunacional.cat/en/activities-museu-nacional-catalunya"
+        >What's on</a
+      >
+      <a href="https://www.museunacional.cat/en/learning">Learning</a>
+    </div>
+    <div class="about-museum-container">
+      <h1>The museum</h1>
+      <hr />
+      <p>
+        The Museu Nacional d’Art de Catalunya is located in the Palau Nacional
+        of Montjuïc, constructed for the International Exposition of 1929. In
+        1934 it opened its doors as the Museu d'Art de Catalunya, bringing
+        together the medieval collection. Subsequently, in 1995, then as the
+        Museu Nacional d'Art de Catalunya, the new rooms of Romanesque art were
+        inaugurated, and in a successive way the public presentation of the
+        collection was extended, a process that ended in 2004 with the
+        integration of modern art.
+      </p>
+      <!-- Пыталась повторить как было на сайте. Каждый параграф в новой колонке. Не получилось.-->
+      <article class="column">
+        <p class="column-item">
+          Visiting the museum you can see the best collection of
+          <a
+            href="https://www.museunacional.cat/en/collections/medieval-romanesque-art"
+            >Romanesque mural painting</a
+          >
+          in the world and the most representative artists of
+          <a href="https://www.museunacional.cat/en/collections/modern-art"
+            >Catalan Modernism</a
+          >, such as Gaudí or Casas.
+          <a
+            href="https://www.museunacional.cat/en/collections/medieval-gothic-art"
+            >Gothic art</a
+          >, great European
+          <a
+            href="https://www.museunacional.cat/en/collections/renaissance-and-baroque-art"
+            >Renaissance and Baroque</a
+          >
+          painters, for example Tiziano or Velázquez, and the collection of
+          photography, complete the collection.
+        </p>
+
+        <p class="column-item">
+          The major strength, quality and versatility of the collection allows
+          you to have a 360º experience: Before, during and after your visit. We
+          recommend you explore the collection and the
+          <a href="https://www.museunacional.cat/en/building-history"
+            >history of the building</a
+          >
+          to discover the secrets.
+        </p>
+
+        <p class="column-item">
+          The organisation of
+          <a href="https://www.museunacional.cat/en/exhibitions"
+            >temporary exhibitions</a
+          >
+          and
+          <a href="https://www.museunacional.cat/en/activities">activities</a>
+          for a greater approach to art, turn the museum into a centre of
+          dialogue and artistic debate.
+        </p>
+      </article>
+      <div class="image-container"></div>
+    </div>
+  </body>
+</html>

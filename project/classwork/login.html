@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500;700&display=swap");
+
+      .right {
+        position: absolute;
+        left: 51%;
+      }
+
+      h1 {
+        text-align: center;
+        
+      }
+
+      .left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 100%;
+      }
+
+      .body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      a {
+        color: black;
+        font-size: 15px;
+
+      }
+      button {
+        padding: 5px 10px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left"></div>
+
+    <div class="right">
+      <h1>Login</h1>
+
+      <h2>Please enter your credentials</h2>
+
+      <form>
+        <p>
+          <input type="text" placeholder="Your login" />
+        </p>
+
+        <p>
+          <input type="password" placeholder="Your password" />
+        </p>
+
+        <p>
+          <button>Login</button>
+        </p>
+
+        <p>
+          <a href="">Create new account</a>
+        </p>
+        <p>
+          <a href="">Request new password</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
