@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Classwork</title>
+    <style>
+      .background_color {
+        background: rgb(106, 106, 245);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      .container {
+        height: 100%;
+      }
+      .header {
+        grid-area: header;
+      }
+      .sidebar {
+        grid-area: sidebar;
+      }
+      .news {
+        grid-area: news;
+      }
+      .content {
+        grid-area: content;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 150px 1fr 150px;
+        grid-template-rows: 150px 1fr 150px;
+        gap: 1rem;
+        grid-template-areas:
+          "header header header"
+          "sidebar content news"
+          "sidebar footer footer";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header background_color"></header>
+      <aside class="sidebar background_color"></aside>
+      <div class="news background_color"></div>
+      <main class="content background_color"></main>
+      <footer class="footer background_color"></footer>
+    </div>
+  </body>
+</html>
